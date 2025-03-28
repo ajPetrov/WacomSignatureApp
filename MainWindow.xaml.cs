@@ -279,7 +279,7 @@ namespace WacomSignatureApp
             {
                 using (MemoryStream memory = new MemoryStream())
                 {
-                    bitmap.Save(memory, ImageFormat.Bmp); // suspect line
+                    bitmap.Save(memory, ImageFormat.Bmp);
                     memory.Position = 0;
 
                     var bitmapImage = new BitmapImage();
