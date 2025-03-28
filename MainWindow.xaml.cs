@@ -53,7 +53,6 @@ namespace WacomSignatureApp
                 capability = tablet.getCapability();
                 penDataList.Clear();
 
-                // Create canvas once
                 canvasBitmap = new Bitmap(capability.screenWidth, capability.screenHeight, PixelFormat.Format32bppArgb);
                 canvasGraphics = Graphics.FromImage(canvasBitmap);
 
@@ -226,7 +225,6 @@ namespace WacomSignatureApp
             int width = source.Width;
             int height = source.Height;
 
-            // Convert source to 32bpp ARGB if not already
             Bitmap safeSource = new Bitmap(width, height, PixelFormat.Format32bppArgb);
             using (Graphics g = Graphics.FromImage(safeSource))
             {
