@@ -42,7 +42,7 @@
       <HintPath>packages\WacomSolutionPartner.InkPlatform.2.0.1\lib\net452\InkPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Interop.wgssSTU">
-      <HintPath>..\..\..\..\..\Program Files (x86)\Wacom STU SDK\COM\bin\x64\Interop.wgssSTU.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Wacom STU SDK\COM\bin\x64\Interop.wgssSTU.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -112,12 +112,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Utilities\getSerialPorts.exe" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\..\..\..\..\Program Files (x86)\Wacom STU SDK\COM\bin\x64\wgssSTU.dll">
-      <Link>wgssSTU.dll</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="FlSigCaptLib">
